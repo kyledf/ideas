@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+}
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.rect {
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Rubik Mono One', sans-serif;
+
+}
+.rect:nth-child(1) {
+  background-color: #d81159;
+  height: 14%;
+  width: 20%;
+  left: 5%;
+  top: 5%;
+}
+
+.rect:nth-child(2) {
+  background-color: #8f2d56;
+  height: 24%;
+  width: 14%;
+  left: 42%;
+  top: 12%;
+}
+
+.rect:nth-child(3) {
+  background-color: #218380;
+  height: 18%;
+  width: 16%;
+  left: 12%;
+  top: 34%;
+}
+
+.rect:nth-child(4) {
+  background-color: #fbb13c;
+  height: 14%;
+  width: 12%;
+  left: 45%;
+  top: 48%;
+}
+
+.rect:nth-child(5) {
+  background-color: #73d2de;
+  height: 16%;
+  width: 32%;
+  left: 8%;
+  top: 70%;
+}
+
+.rect:nth-child(6) {
+  background-color: #9ad2cb;
+  height: 24%;
+  width: 24%;
+  left: 68%;
+  top: 8%;
+}
+
+.rect:nth-child(7) {
+  background-color: #d7ebba;
+  height: 16%;
+  width: 20%;
+  left: 50%;
+  top: 74%;
+}
+
+.rect:nth-child(8) {
+  background-color: #feffbe;
+  height: 24%;
+  width: 18%;
+  left: 72%;
+  top: 42%;
+}
