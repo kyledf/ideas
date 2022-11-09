@@ -1,27 +1,60 @@
+@font-face {
+  font-family: 'Camar';
+  src: url(assets/Camar.otf);
+}
+
 body {
-  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   padding: 0;
-  background-color: #1e1e1e;
+  margin: 0;
+  background-color: #ffffff;
+}
+#text {
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  font-family: 'Camar';
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 800ms;
 }
 #container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 125vw;
+  height: 125vh;
 }
 
 .rect {
   position: absolute;
   border-radius: 10px;
-  color: white;
-  text-align: center;
   overflow: hidden;
-  font-family: 'Rubik Mono One', sans-serif;
-
+  transition: ease-in-out 800ms;
+  box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.3);
+}
+.rect > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  border-radius: inherit;
+  transition: ease-in-out 800ms;
+}
+.rect:hover {
+  transform: scale(1.1);
+}
+.rect:hover > img {
+  opacity: 1;
+  transform: scale(1.01);
 }
 .rect:nth-child(1) {
-  background-color: #d81159;
+  background-color: #ed0134;
   height: 14%;
   width: 20%;
   left: 5%;
@@ -29,7 +62,7 @@ body {
 }
 
 .rect:nth-child(2) {
-  background-color: #8f2d56;
+  background-color: #961015;
   height: 24%;
   width: 14%;
   left: 42%;
@@ -37,7 +70,7 @@ body {
 }
 
 .rect:nth-child(3) {
-  background-color: #218380;
+  background-color: #34711f;
   height: 18%;
   width: 16%;
   left: 12%;
@@ -45,7 +78,7 @@ body {
 }
 
 .rect:nth-child(4) {
-  background-color: #fbb13c;
+  background-color: #fe9602;
   height: 14%;
   width: 12%;
   left: 45%;
@@ -53,7 +86,7 @@ body {
 }
 
 .rect:nth-child(5) {
-  background-color: #73d2de;
+  background-color: #63a5d2;
   height: 16%;
   width: 32%;
   left: 8%;
@@ -61,7 +94,7 @@ body {
 }
 
 .rect:nth-child(6) {
-  background-color: #9ad2cb;
+  background-color: #a8cfea;
   height: 24%;
   width: 24%;
   left: 68%;
@@ -69,7 +102,7 @@ body {
 }
 
 .rect:nth-child(7) {
-  background-color: #d7ebba;
+  background-color: #797902;
   height: 16%;
   width: 20%;
   left: 50%;
@@ -77,7 +110,7 @@ body {
 }
 
 .rect:nth-child(8) {
-  background-color: #feffbe;
+  background-color: #ffc619;
   height: 24%;
   width: 18%;
   left: 72%;
