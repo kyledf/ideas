@@ -1,16 +1,34 @@
 const container = document.getElementById("container");
 const rects = document.getElementsByClassName("rect");
 const text = document.getElementById("text");
-
+text.style.backgroundColor = "white";
+let bgColour;
 for (var i = 0; i < rects.length; i++) {
   ((i) => {
     rects[i].addEventListener("mouseover", () => {
       const style = getComputedStyle(rects[i]);
-      let color = style.backgroundColor;
-      text.style.color = color;
+      bgColour = style.backgroundColor;
+      if (text.style.backgroundColor != bgColour) {
+        text.style.color = bgColour;
+      } else {
+        text.style.color = "white";
+      }
     });
     rects[i].addEventListener("mouseout", () => {
-      text.style.color = "black";
+      if (text.style.backgroundColor == "white") {
+        text.style.color = "black";
+      } else {
+        text.style.color = "white";
+      }
+    });
+    rects[i].addEventListener("click", () => {
+      if (text.style.backgroundColor != bgColour) {
+        text.style.backgroundColor = bgColour;
+        text.style.color = "white";
+      } else {
+        text.style.backgroundColor = "white";
+        text.style.color = "black";
+      }
     });
   })(i);
 }

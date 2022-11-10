@@ -9,12 +9,12 @@ body {
   overflow: hidden;
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
 }
 #text {
   width: 100vw;
   height: 100vh;
   color: black;
+  background-color: white;
   font-family: 'Camar';
   font-size: 50px;
   display: flex;
@@ -48,6 +48,7 @@ body {
 }
 .rect:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .rect:hover > img {
   opacity: 1;
