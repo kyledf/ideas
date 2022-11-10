@@ -46,5 +46,10 @@ window.onmousemove = (e) => {
   const panX = decimalX * maxX;
   const panY = decimalY * maxY;
 
-  container.style.transform = `translate(-${panX}px, -${panY}px)`;
+  // container.style.transform = `translate(-${panX}px, -${panY}px)`;
+  container.animate([{ transform: `translate(-${panX}px, -${panY}px)` }], {
+    duration: 800,
+    fill: "forwards",
+    easing: "ease",
+  });
 };
