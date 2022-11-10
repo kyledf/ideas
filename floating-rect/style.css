@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Camar';
+  font-family: "Camar";
   src: url(assets/Camar.otf);
 }
 
@@ -15,7 +15,7 @@ body {
   height: 100vh;
   color: black;
   background-color: white;
-  font-family: 'Camar';
+  font-family: "Camar";
   font-size: 50px;
   display: flex;
   justify-content: center;

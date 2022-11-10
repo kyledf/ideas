@@ -6,8 +6,8 @@ let bgColour;
 for (var i = 0; i < rects.length; i++) {
   ((i) => {
     rects[i].addEventListener("mouseover", () => {
-      const style = getComputedStyle(rects[i]);
-      bgColour = style.backgroundColor;
+      const activeRect = getComputedStyle(rects[i]);
+      bgColour = activeRect.backgroundColor;
       if (text.style.backgroundColor != bgColour) {
         text.style.color = bgColour;
       } else {
