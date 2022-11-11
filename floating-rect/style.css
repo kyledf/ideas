@@ -22,12 +22,12 @@ body {
   text-align: center;
   transition: ease-in-out 1000ms;
 }
-#text>h1 {
+#text > h1 {
   margin: 0;
   font-family: "Camar";
   font-size: 75px;
 }
-#text>p{
+#text > p {
   margin: 0;
   font-family: "Alatsi";
   font-size: 15px;
@@ -102,7 +102,7 @@ body {
   top: 70%;
 }
 .rect:nth-child(6) {
-  background-color: #a8cfea;
+  background-color: #51ace4;
   height: 24%;
   width: 24%;
   left: 68%;
@@ -110,7 +110,7 @@ body {
 }
 
 .rect:nth-child(7) {
-  background-color: #797902;
+  background-color: #b1e328;
   height: 16%;
   width: 20%;
   left: 50%;
@@ -197,7 +197,7 @@ ion-icon:hover {
   overflow: hidden;
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Alatsi";
   display: block;
   padding: 2px 5px;
@@ -236,10 +236,10 @@ ion-icon:hover {
   background-color: rgba(99, 165, 210, 0.8);
 }
 .rect:nth-child(6) .card {
-  background-color: rgba(168, 207, 234, 0.8);
+  background-color: rgba(81, 172, 228, 0.8);
 }
 .rect:nth-child(7) .card {
-  background-color: rgba(121, 121, 2, 0.8);
+  background-color: rgba(177, 227, 40, 0.8);
 }
 .rect:nth-child(8) .card {
   background-color: rgba(255, 198, 25, 0.8);
