@@ -141,6 +141,19 @@ body {
   opacity: 1;
   transition: ease-in-out 1000ms;
 }
+ion-icon {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  transition: ease-in-out 800ms;
+}
+ion-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgba(255, 255, 255, 1);
+}
 .card {
   color: white;
   width: 30%;
@@ -162,7 +175,7 @@ body {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 25px;
 }
 .card > a {
   position: absolute;
@@ -175,8 +188,8 @@ body {
   display: block;
   padding: 2px 5px;
 }
-.card> a::after {
-  content: '';
+.card > a::after {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -189,7 +202,7 @@ body {
 }
 
 .card > a:hover::after,
-.card > a:focus::after{
+.card > a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

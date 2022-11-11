@@ -1,10 +1,12 @@
 const container = document.getElementById("container");
 const cards = document.getElementsByClassName("innerContent");
 const rects = document.getElementsByClassName("rect");
+const backButton = document.getElementsByTagName("ion-icon");
 const text = document.getElementById("text");
-text.style.backgroundColor = "white";
+let backPressed = false;
 let bgColour;
 let selectedIndex = 0;
+
 for (var i = 0; i < rects.length; i++) {
   ((i) => {
     rects[i].addEventListener("mouseover", () => {
@@ -17,26 +19,25 @@ for (var i = 0; i < rects.length; i++) {
       }
     });
     rects[i].addEventListener("mouseout", () => {
-      if (text.style.backgroundColor == "white") {
-        text.style.color = "black";
-      } else {
-        text.style.color = "white";
-      }
+      text.style.color = "black";
+      backPressed = false;
     });
     rects[i].addEventListener("click", () => {
-      if (text.style.backgroundColor != bgColour) {
+      if (!rects[i].classList.contains("expanded") && !backPressed) {
         text.style.backgroundColor = bgColour;
-        text.style.color = "white";
         selectedIndex = i;
         rects[i].classList.add("expanded");
-      } else {
+      }
+    });
+    backButton[i].addEventListener("click", () => {
+      if (rects[selectedIndex].classList.contains("expanded")) {
+        rects[selectedIndex].classList.remove("expanded");
+        backPressed = true;
         text.style.backgroundColor = "white";
         text.style.color = "black";
-        rects[i].classList.remove("expanded");
       }
     });
   })(i);
-  
 }
 window.onmousemove = (e) => {
   const mouseX = e.clientX;
@@ -56,9 +57,12 @@ window.onmousemove = (e) => {
     fill: "forwards",
     easing: "ease",
   });
-  cards[selectedIndex].animate([{ transform: `translate(${panX}px, ${panY}px)` }], {
-    duration: 1000,
-    fill: "forwards",
-    easing: "ease",
-  });
+  cards[selectedIndex].animate(
+    [{ transform: `translate(${panX}px, ${panY}px)` }],
+    {
+      duration: 1000,
+      fill: "forwards",
+      easing: "ease",
+    }
+  );
 };
