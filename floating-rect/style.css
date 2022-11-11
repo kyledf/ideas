@@ -164,6 +164,17 @@ body {
   margin: 0;
   padding: 10px;
 }
+.card > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: ease-out 200ms;
+  border-bottom: transparent 1px solid;
+}
+.card > a:hover {
+  border-bottom: 2px solid white;
+}
 .rect:nth-child(1) .card {
   background-color: rgba(237, 1, 52, 0.8);
 }
