@@ -125,6 +125,10 @@ body {
   z-index: 100;
   transition: ease-in-out 800ms;
 }
+.rect.expanded:hover {
+  transform: scale(1);
+  cursor: default;
+}
 .rect > .innerContent {
   opacity: 0;
 }
@@ -143,16 +147,16 @@ body {
 }
 ion-icon {
   position: absolute;
-  top: 10vh;
-  left: 10vw;
+  top: 2vh;
+  left: 2vw;
   color: rgba(255, 255, 255, 0.5);
   font-size: 50px;
-  transition: ease-in-out 800ms;
+  transition: ease-in-out 1000ms;
 }
 ion-icon:hover {
   cursor: pointer;
   transform: scale(1.2);
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 .card {
   color: white;
@@ -173,7 +177,7 @@ ion-icon:hover {
 }
 .card > p {
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Alatsi";
   margin: 0;
   padding: 25px;
 }
@@ -184,7 +188,7 @@ ion-icon:hover {
   text-decoration: none;
   color: white;
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Alatsi";
   display: block;
   padding: 2px 5px;
 }
