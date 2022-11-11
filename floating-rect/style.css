@@ -15,12 +15,22 @@ body {
   height: 100vh;
   color: black;
   background-color: white;
-  font-family: "Camar";
-  font-size: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   transition: ease-in-out 1000ms;
+}
+#text>h1 {
+  margin: 0;
+  font-family: "Camar";
+  font-size: 75px;
+}
+#text>p{
+  margin: 0;
+  font-family: "Alatsi";
+  font-size: 15px;
 }
 #container {
   position: absolute;
@@ -175,11 +185,11 @@ ion-icon:hover {
   margin: 0;
   padding: 0;
 }
-.card > p {
+.card > ul {
+  text-align: left;
   font-size: 20px;
   font-family: "Alatsi";
-  margin: 0;
-  padding: 25px;
+  margin: 15px;
 }
 .card > a {
   position: absolute;
