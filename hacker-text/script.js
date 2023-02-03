@@ -1,4 +1,4 @@
-const letters = "abcdefghijklmnopqrstuvwxyz";
+const letters = "abcdefghijklmnopqrstuvwxyz ";
 document.querySelector("h1").onmouseover = (event) => {
   const startWord = event.target.innerText;
   let count = 0;
