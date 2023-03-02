@@ -23,6 +23,7 @@ const combinations = [
 ];
 
 let prev = 0;
+let intervalTime = 2000;
 
 const changeShapes = () => {
   wrapper.style.opacity = 1;
@@ -34,16 +35,18 @@ const changeShapes = () => {
 };
 let interval = setInterval(() => {
   changeShapes();
-}, 3000);
+}, intervalTime);
 
 for (let i = 0; i < shape.length; i++) {
   shape[i].onmouseover = () => {
+    console.log("mouse over", i);
     clearInterval(interval);
   };
 
   shape[i].onmouseout = () => {
+    console.log("mouse out", i);
     interval = setInterval(() => {
       changeShapes();
-    }, 3000);
+    }, intervalTime);
   };
 }
